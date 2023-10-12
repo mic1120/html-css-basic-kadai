@@ -1,6 +1,6 @@
 body {
     font-family: "Arial", "Meiryo", sans-serif ;
-    font-weight: 20px;
+    font-size: 20px;
     text-align: center ;
 }
 
@@ -8,8 +8,8 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2em; 
     letter-spacing: 1.2rem;
-    text-shadow: 2px 2px 2px gray ;
-    border-bottom: 3px solid rgb(115, 115, 114)
+    text-shadow: 1px 1px 1px gray ;
+    border-bottom: solid 3px rgb(115, 115, 114)
 }
 .skyblue {
     color: skyblue;
@@ -19,5 +19,4 @@ h1 {
 }
 #basic p {
     font-weight: bold ;
-    color: red ;
 }
