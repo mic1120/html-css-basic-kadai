@@ -1,0 +1,101 @@
+/*Step2. ページ構成とスタイルの下準備*/
+
+h1,p,body {
+    margin: 0;
+}
+
+p,a {
+    font-size: 20px;
+}
+
+
+/*Step3. header部分の作成*/
+
+header {
+    padding-bottom: 20px;
+    background-color: rgb(244,79,79);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255,255,255);
+}
+
+/*Step4-2. main内スタイルの設定*/
+
+main {
+    padding: 10px;
+}
+
+
+#parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents {
+    border: 3px solid rgb(238,204,204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+
+}
+/*class名contents内の二番目のp要素内のテキスト
+の中で一番目の文字にのみ、以下のスタイル設定
+をします。nth-of-type(n)とfirst-letterを
+組み合わせると表現できます。*/
+.contents p:nth-child(3)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+.contents img {
+    margin:10px 0;
+    width: 70%;
+}
+
+/*Step5-2. フッター内スタイルの設定*/
+footer{
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(193, 234, 251);
+}
+
+a:hover {
+    color: rgb(245, 178, 168);
+}
+/*Step6. レスポンシブ対応*/
+
+/*画面幅768px以下になったら表示が変わるようにブレークポイントを設定します。
+
+次に、画面幅768px以下のスタイル設定を次のように行います。
+
+h2のフォントサイズは30pxとします。
+pのフォントサイズは25pxとします。
+Flexboxコンテナであるid名parent内の要素が縦に並ぶようにします。*/
+@media screen and (max-width:768px) {
+    h2 {
+        font-size:30px;
+    }
+    p {
+        font-size: 25px;
+    }
+    #parent {
+        display: block;
+    }
+}
+
+/*Step7. 完成形と見比べる*/
+
